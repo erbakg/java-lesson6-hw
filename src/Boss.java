@@ -1,20 +1,20 @@
 public class Boss extends GameEntity{
-    private WeaponType weaponType;
+    private Weapon weapon;
 
-    public Boss(String name, int health, int damage, WeaponType weaponType){
+    public Boss(String name, int health, int damage, Weapon weapon){
         super(name, health, damage);
-        this.weaponType = weaponType;
+        this.weapon = weapon;
     }
 
-    public WeaponType getWeaponType() {
-        return weaponType;
+    public Weapon getWeapon() {
+        return weapon;
     }
 
-    public void setWeaponType(WeaponType weaponType) {
-        this.weaponType = weaponType;
+    public void setWeapon(Weapon weapon) {
+        this.weapon = weapon;
     }
 
     public void printInfo(){
-        System.out.println(this.getName() + " info:\n Health: " + this.getHealth() + " WeaponType: "+ this.weaponType);
+        System.out.println(this.getName() + " info:\n Health: " + this.getHealth() + " Weapon: "+ this.weapon.getName());
     }
 }

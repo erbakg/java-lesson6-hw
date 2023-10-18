@@ -1,11 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        Boss bigBoss = new Boss("Boss",500, 100, WeaponType.PHYSICAL);
+        Weapon bossWeapon = new Weapon();
+        bossWeapon.setName("Разрушитель");
+        bossWeapon.setWeaponType(WeaponType.PHYSICAL);
+        Boss bigBoss = new Boss("Boss", 500, 100, bossWeapon);
         bigBoss.printInfo();
 
-        Skeleton sc1 = new Skeleton("sc1",150, 50, WeaponType.PHYSICAL, 20);
+        Weapon scWeapon = new Weapon();
+        scWeapon.setName("Ultra Bow");
+        scWeapon.setWeaponType(WeaponType.PHYSICAL);
+        Skeleton sc1 = new Skeleton("sc1", 150, 50, scWeapon, 20);
         sc1.printInfo();
-        Skeleton sc2 = new Skeleton("sc2",120, 70, WeaponType.PHYSICAL, 30);
+        Skeleton sc2 = new Skeleton("sc2", 120, 70, scWeapon, 30);
         sc2.printInfo();
 
     }

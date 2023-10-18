@@ -2,8 +2,8 @@ public class Skeleton extends Boss {
 
     private int quantityOfArrows;
 
-    public Skeleton(String name, int health, int damage, WeaponType weaponType, int quantityOfArrows) {
-        super(name, health, damage, weaponType);
+    public Skeleton(String name, int health, int damage, Weapon weapon, int quantityOfArrows) {
+        super(name, health, damage, weapon);
         this.quantityOfArrows = quantityOfArrows;
     }
 
